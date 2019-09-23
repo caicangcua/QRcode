@@ -21,11 +21,11 @@ module.exports = {
         ]
 
         QRCode.toDataURL(segs, { errorCorrectionLevel: 'L', version: 5, maskPattern: 4 }, function (err, url) {
-            console.log(url)
+            res.json({ 'qrimg': url });
         })
         var d = new Date();
         console.log("fucking: " + d.toLocaleString());
-        res.json({ 'fuck': 'fucking' });
+        //res.json({ 'callapi': 'adu' });
     },
     detail: (req, res) => {
         let sql = 'SELECT * FROM products WHERE id = ?'
