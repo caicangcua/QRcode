@@ -127,9 +127,16 @@ var self = module.exports = {
         var rawPart = bc.split('_ADA');
         var K71_15_ADA = rawPart[0] + '_ADA';
         bc = rawPart[1];
-        rawPart = bc.split('C_');
-        var _440250 = rawPart[0];
+
+        var _440250 = '', prefixC = 'C_';
+        rawPart = bc.split(prefixC);
+        if (rawPart.length == 1) {
+            prefixC = 'V_';
+            rawPart = bc.split(prefixC);
+        };
+        _440250 = rawPart[0];
         bc = rawPart[1];
+
         rawPart = bc.split('_AK');
         var _2019_07_01 = rawPart[0];
         //
@@ -144,7 +151,7 @@ var self = module.exports = {
         var segs = [
             { data: K71_15_ADA, mode: 'byte' },
             { data: _440250, mode: 'numeric' },
-            { data: 'C_', mode: 'byte' },
+            { data: prefixC, mode: 'byte' },
             { data: _2019_07_01, mode: 'alphanumeric' },
             { data: '_AK', mode: 'byte' },
             { data: rawPart[0], mode: 'numeric' },
