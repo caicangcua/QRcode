@@ -1,6 +1,9 @@
-# Api nodejs example
-# Install package
-Run `npm install`
+# Node Hello World
 
-# Run api
-Run `npm run start`
+Simple node.js app that servers "hello world"
+
+Great for testing simple deployments to the cloud
+
+## Run It
+
+`npm start`

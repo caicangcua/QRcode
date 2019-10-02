@@ -1,28 +1,25 @@
 {
-  "name": "api_nodejs",
+  "name": "papa-node-hello-000",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "start:dev": "nodemon server.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "mysql": "^2.15.0",
-    "nodemon": "^1.17.5",
     "qrcode": "1.4.2",
-    "bwip-js": "1.7.3",
-    "request": "2.88.0"
+    "bwip-js": "1.7.3"
   },
   "dependencies": {
-    "dotenv": "^5.0.1",
-    "express": "^4.16.3",
-    "util": "^0.10.3",
     "qrcode": "1.4.2",
-    "bwip-js": "1.7.3",
-    "request": "2.88.0"
-  }
+    "bwip-js": "1.7.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnpapa/node-hello/issues"
+  },
+  "homepage": "https://github.com/johnpapa/node-hello#readme"
 }
